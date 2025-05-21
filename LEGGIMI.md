@@ -25,6 +25,17 @@ Progettato con un occhio di riguardo a sicurezza e semplicità d’uso, consente
   I file non vengono mai esposti pubblicamente, riducendo il rischio di download non autorizzati o fughe di dati.
 
 ## Solo i file autorizzati verranno caricati. Ogni file è sottoposto a scansione antivirus prima di essere accettato.
+### Gestione delle estensioni accettate e verifica MIME type
+
+La lista delle estensioni di file accettate è definita nel file `accepted_extensions.env`.  
+Per ogni estensione elencata, l'applicazione recupera il relativo MIME type dal file `mime_types.json`.  
+**Se per una determinata estensione non esiste una corrispondenza nel file JSON, il file non verrà riconosciuto come valido** e quindi non potrà essere caricato: in tal caso, occorre aggiornare anche `mime_types.json` con il MIME type corretto.
+
+## Antivirus
+
+L'applicazione utilizza **ClamAV** come sistema di controllo antivirus per tutti i file caricati.  
+**Questa scelta non è attualmente configurabile**: ogni file viene automaticamente scansionato con ClamAV prima di essere accettato.
+
 
 ## Guida Rapida
 

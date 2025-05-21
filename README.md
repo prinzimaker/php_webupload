@@ -26,6 +26,16 @@ Designed with security and usability in mind, it enables users to upload single 
 
 
 ## Only allowed files will be uploaded. Each file is scanned by antivirus before being accepted.
+### Accepted Extensions and MIME Type Matching
+
+The list of accepted file extensions is defined in the `accepted_extensions.env` file.  
+For each listed extension, the application retrieves the corresponding MIME type from the `mime_types.json` file.  
+**If an extension does not have a matching MIME type in the JSON file, that file type will not be recognized as valid** and will not be accepted: in such cases, you need to update the `mime_types.json` file with the correct MIME type.
+
+## Antivirus
+
+The application uses **ClamAV** as the antivirus engine for all uploaded files.  
+**This is not configurable at the moment:** every uploaded file is automatically scanned with ClamAV before being accepted.
 
 ## Quick Start
 
