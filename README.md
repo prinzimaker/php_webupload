@@ -36,14 +36,23 @@ Designed with security and usability in mind, it enables users to upload single 
 5. Enter any 32-byte hexadecimal access key (no check is done, it's your duty).
 6. Drag and drop your files or folders to start uploading.
 7. You will find the files nder the upload dir ath the same level of webroot.
+      
       root
+      
       [config files]
-      - upload
+      
+      > upload
+      
           [key folder]
+      
               [upload files]
-      - log
+      
+      > log
+      
           [operations logger]
-      - webroot
+      
+      > webroot
+      
           [the app files]
 
 ## Security Notes
