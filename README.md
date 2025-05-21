@@ -51,7 +51,7 @@ Designed with security and usability in mind, it enables users to upload single 
       
           [operations logger]
       
-      > webroot
+      > webroot (this is teh web server application folder)
       
           [the app files]
 
