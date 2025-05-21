@@ -25,7 +25,7 @@ Designed with security and usability in mind, it enables users to upload single 
   Files are not publicly exposed, reducing risk of unauthorized downloads or data leaks.
 
 
-##Only allowed files will be uploaded. Each file is scanned by antivirus before being accepted.##
+## Only allowed files will be uploaded. Each file is scanned by antivirus before being accepted.
 
 ## Quick Start
 
