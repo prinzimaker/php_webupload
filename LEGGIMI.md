@@ -36,19 +36,24 @@ Progettato con un occhio di riguardo a sicurezza e semplicità d’uso, consente
 6. Trascina e rilascia i tuoi file o cartelle per iniziare il caricamento.
 7. Troverai i file nella directory upload, allo stesso livello della webroot.
 
-root
-
-[config files]
-
-    upload
-    [cartella chiave]
-    [file caricati]
-
-    log
-    [operazioni di log]
-
-    webroot (questa è la cartella dell’applicazione web)
-    [i file dell’app]
+      
+      root
+      
+      [config files]
+      
+      > upload
+      
+          [key folder]
+      
+              [upload files]
+      
+      > log
+      
+          [operations logger]
+      
+      > webroot (this is teh web server application folder)
+      
+          [the app files]
 
 
 ## Note sulla Sicurezza
