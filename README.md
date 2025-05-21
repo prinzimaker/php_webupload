@@ -24,15 +24,27 @@ Designed with security and usability in mind, it enables users to upload single 
 - **Security-first:**  
   Files are not publicly exposed, reducing risk of unauthorized downloads or data leaks.
 
+
+##Only allowed files will be uploaded. Each file is scanned by antivirus before being accepted.##
+
 ## Quick Start
 
 1. Clone or download this repository.
 2. Copy the files to your web server.
-3. Make sure your PHP process can write to the upload directory.
-4. Open the upload page in your browser.
-5. Enter your 32-byte hexadecimal access key.
+3. configura apache/nginx to the "webroot" directiry as your root web app directory
+4. Open the index page in your browser.
+5. Enter any 32-byte hexadecimal access key (no check is done, it's your duty).
 6. Drag and drop your files or folders to start uploading.
-7. Only allowed files will be uploaded. Each file is scanned by antivirus before being accepted.
+7. You will find the files nder the upload dir ath the same level of webroot.
+      root
+      [config files]
+      - upload
+          [key folder]
+              [upload files]
+      - log
+          [operations logger]
+      - webroot
+          [the app files]
 
 ## Security Notes
 
